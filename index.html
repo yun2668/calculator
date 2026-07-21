@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>線上計算機</title>
+
+  <!-- 載入 CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 載入 JavaScript -->
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <main class="page-container">
+
+    <section class="calculator">
+
+      <h1>線上計算機</h1>
+
+      <!-- 計算結果顯示區 -->
+      <input
+        type="text"
+        id="display"
+        class="display"
+        value="0"
+        aria-label="計算結果"
+        readonly
+      >
+
+      <!-- 計算機按鈕 -->
+      <div class="buttons">
+
+        <button type="button" class="function-button" data-action="clear">
+          AC
+        </button>
+
+        <button type="button" class="function-button" data-action="delete">
+          DEL
+        </button>
+
+        <button type="button" class="function-button" data-action="percent">
+          %
+        </button>
+
+        <button type="button" class="operator-button" data-value="/">
+          ÷
+        </button>
+
+        <button type="button" data-value="7">7</button>
+        <button type="button" data-value="8">8</button>
+        <button type="button" data-value="9">9</button>
+
+        <button type="button" class="operator-button" data-value="*">
+          ×
+        </button>
+
+        <button type="button" data-value="4">4</button>
+        <button type="button" data-value="5">5</button>
+        <button type="button" data-value="6">6</button>
+
+        <button type="button" class="operator-button" data-value="-">
+          −
+        </button>
+
+        <button type="button" data-value="1">1</button>
+        <button type="button" data-value="2">2</button>
+        <button type="button" data-value="3">3</button>
+
+        <button type="button" class="operator-button" data-value="+">
+          ＋
+        </button>
+
+        <button type="button" class="zero-button" data-value="0">
+          0
+        </button>
+
+        <button type="button" data-value=".">.</button>
+
+        <button type="button" class="equal-button" data-action="calculate">
+          ＝
+        </button>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
